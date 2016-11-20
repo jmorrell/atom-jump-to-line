@@ -1,15 +1,15 @@
 {
-  "name": "smalls",
-  "main": "./lib/main",
-  "version": "0.2.0",
-  "description": "Rapid cursor positioning across any visible chars with search and jump.",
+  "name": "jump-to-line",
+  "main": "./lib/index.js",
+  "version": "0.1.0",
+  "description": "Rapidly jump to the start of any line that is currently visible",
   "activationCommands": {
     "atom-workspace": [
-      "smalls:start"
+      "jump-to-line:start"
     ]
   },
   "keywords": [],
-  "repository": "https://github.com/t9md/atom-smalls",
+  "repository": "",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
@@ -17,44 +17,11 @@
   "dependencies": {
     "underscore-plus": "^1.6.6"
   },
-  "configSchema": {
-    "labelChars": {
-      "order": 1,
-      "type": "string",
-      "default": ";ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-      "description": "Always be matched with case insensitive"
-    },
-    "labelPosition": {
-      "order": 2,
-      "type": "string",
-      "default": "start",
-      "enum": [
-        "start",
-        "end"
-      ]
-    },
-    "jumpTriggerInputLength": {
-      "order": 3,
-      "type": "integer",
-      "minimum": 0,
-      "default": 0,
-      "description": "0 means disable. If input exceed this length, automatically start jump mode"
-    },
-    "flashOnLand": {
-      "order": 32,
-      "type": "boolean",
-      "default": true,
-      "description": "flash effect on land"
-    },
-    "flashType": {
-      "order": 35,
-      "type": "string",
-      "default": "word",
-      "enum": [
-        "match",
-        "word"
-      ],
-      "description": "Range to be flashed"
-    }
+  "scripts": {
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.35.0",
+    "nuclide": "^0.183.0"
   }
 }
