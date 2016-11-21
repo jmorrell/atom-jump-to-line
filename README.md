@@ -2,6 +2,8 @@
 
 Rapidly jump to the start of any line that is currently visible.
 
+![gif](https://cldup.com/wK4OJ-4eHF.gif)
+
 This was the only feature that I really used from [vim-easymotion](https://github.com/easymotion/vim-easymotion), and no other
 package emulated the workflow that I wanted well. Most of the time I don't want
 to search, or figure out what motion gets me precisely where I want. With this

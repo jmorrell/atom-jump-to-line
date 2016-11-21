@@ -9,7 +9,7 @@
     ]
   },
   "keywords": [],
-  "repository": "",
+  "repository": "https://github.com/jmorrell/atom-jump-to-line",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
