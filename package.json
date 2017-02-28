@@ -1,7 +1,7 @@
 {
   "name": "jump-to-line",
   "main": "./lib/index.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Rapidly jump to the start of any line that is currently visible",
   "activationCommands": {
     "atom-workspace": [
